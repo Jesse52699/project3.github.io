@@ -1,0 +1,754 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: "benton-sans";
+  src: url("https://use.typekit.net/af/738ece/00000000000000003b9b2cf5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/738ece/00000000000000003b9b2cf5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/738ece/00000000000000003b9b2cf5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "benton-sans";
+  src: url("https://use.typekit.net/af/bb6c4e/00000000000000003b9b2cf8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/bb6c4e/00000000000000003b9b2cf8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/bb6c4e/00000000000000003b9b2cf8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "benton-sans";
+  src: url("https://use.typekit.net/af/343e47/00000000000000003b9b2cf9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/343e47/00000000000000003b9b2cf9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/343e47/00000000000000003b9b2cf9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+body {
+  font-family: benton-sans, Helvetica, "Sans-serif";
+}
+.columns {
+  display: flex;
+  justify-content: center;
+}
+.columns .glide_box {
+  width: 695px;
+}
+.columns .glide_box .glide__slide {
+  height: 460px;
+  position: relative;
+}
+.columns .glide_box .glide__slide iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.columns .glide_box .glide__slide .imgCloudinary {
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.columns .info_box {
+  width: 485px;
+  margin-left: 2.5rem;
+  color: #2a2a2a;
+}
+.columns .info_box .status {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #949494;
+}
+.columns .info_box .title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 8px;
+}
+.columns .info_box .desc {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin: 0.25rem 0 1rem;
+}
+.columns .info_box .person {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0.75rem;
+}
+.columns .info_box .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.columns .info_box .name {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.columns .info_box .desc2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.columns .basicsGoalProgress {
+  padding: 1rem 0;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal .amount {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 3px;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal .funding {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1rem;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal .num {
+  font-weight: 600;
+  margin-right: 3px;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-progressBar {
+  margin-bottom: 0.5rem;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-progressBar .campaignFundingBar {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  background: #ddd;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-progressBar .campaignFundingBar-progress {
+  position: absolute;
+  height: 10px;
+  background: #34ca96;
+  border-radius: 5px 0 0 5px;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-progressDetails .detailsGoal {
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+.columns .basicsGoalProgress .basicsGoalProgress-progressDetails .goalWording {
+  font-weight: 600;
+  border-bottom: 1px dashed #949494;
+  margin-left: 4px;
+}
+.columns .basicsSection-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+.columns .basicsSection-actions .followButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 1.25rem;
+  text-align: center;
+  height: 3rem;
+  font-size: 0.875rem;
+  color: #2a2a2a;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  transition: all 0.1s cubic-bezier(0.16, 0.8, 0.45, 1);
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.columns .basicsSection-actions .followButton svg {
+  margin-right: 0.5rem;
+  fill: #6a6a6a;
+}
+.columns .basicsSection-actions .basicsSocialActions {
+  flex: 1;
+  text-align: right;
+}
+.columns .basicsSection-actions .basicsSocialActions a {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.columns .basicsSection-actions .basicsSocialActions svg {
+  fill: #6a6a6a;
+  width: 20px;
+  height: 20px;
+}
+.columns .midContent-left {
+  width: 695px;
+}
+.columns .midContent-right {
+  width: 485px;
+  margin-left: 2.5rem;
+}
+.columns .tabs {
+  display: flex;
+}
+.columns .tabs .tab {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  text-decoration: none;
+  cursor: pointer;
+}
+.columns .tabs .tab .tab-label {
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+}
+.columns .tabs .tab .tab-pill {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  margin-left: 3px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.columns .tabs .tab:hover .tab-label {
+  border-bottom: 3px solid #c8c8c8;
+}
+.columns .tabs .active .tab-label {
+  border-bottom: 3px solid #2a2a2a;
+  font-weight: 600;
+}
+.columns .tabs_contents {
+  margin-top: 2rem;
+}
+.columns .tabs_contents img {
+  max-width: 100%;
+}
+.columns .tabs_contents p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.columns .tabs_contents h4 {
+  font-size: 1.5rem;
+}
+.columns .faqSection-container {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+.columns .defaultCampaignFaqs-container {
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+}
+.columns .defaultCampaignFaqs-container h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+.columns .defaultCampaignFaqs-container .campaignFaq-container {
+  padding-top: 24px;
+}
+.columns .defaultCampaignFaqs-container .campaignFaq-question {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.columns .defaultCampaignFaqs-container .campaignFaq-answer {
+  font-weight: 500;
+  color: #6a6a6a;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.columns .defaultCampaignFaqs-container-divider {
+  padding: 24px;
+}
+.columns .defaultCampaignFaqs-container-divider--border {
+  border-top: 1px solid #ddd;
+}
+.columns ul {
+  padding-left: 0;
+}
+.columns .list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 20px;
+}
+.columns .list_item .person {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0.75rem;
+}
+.columns .list_item .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.columns .list_item .name {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.columns .list_item .desc2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.columns .list_item .amount {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 3px;
+}
+.columns .perkSection {
+  width: 336px;
+  margin: auto;
+}
+.columns .perkSection .selectPerkLabel {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.columns .perkSection .stickyPerkSection {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 85vh;
+  padding-right: 16px;
+}
+.columns .perkSection .perkCard {
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  opacity: 0.5;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+.columns .perkSection .perkCard .perkName {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.columns .perkSection .perkCard .perkPrice {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.columns .perkSection .perkCard .description {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.columns .perkSection .perkCard .estimatedShipping {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.columns .perkSection .perkCard .estDelivery {
+  font-size: 0.875rem;
+}
+.columns .perkSection .perkCard .claimed {
+  padding-top: 0.75rem;
+  font-size: 0.875rem;
+}
+.midContent {
+  border-top: 1px solid #c8c8c8;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  .midContent {
+    display: none;
+  }
+  .columns2 {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+  .columns {
+    display: block;
+  }
+  .columns .glide_box {
+    width: 100%;
+  }
+  .columns .glide_box .glide__slide {
+    width: 100%;
+    height: 248px;
+    position: relative;
+  }
+  .columns .glide_box .glide__slide iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .columns .glide_box .glide__slide .imgCloudinary {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  .columns .info_box {
+    width: 100%;
+    margin-left: 0;
+    color: #2a2a2a;
+    padding: 0 1rem;
+  }
+  .columns .info_box .status {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #949494;
+  }
+  .columns .info_box .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+  .columns .info_box .desc {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin: 0.25rem 0 1rem;
+  }
+  .columns .info_box .person {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0.75rem;
+  }
+  .columns .info_box .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .columns .info_box .name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .columns .info_box .desc2 {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .columns .basicsGoalProgress {
+    padding: 1rem 0;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal .amount {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 1px;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal .funding {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.875rem;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-amountTowardsGoal .num {
+    font-weight: 600;
+    margin-right: 3px;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-progressBar {
+    margin-bottom: 0.5rem;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-progressBar .campaignFundingBar {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background: #ddd;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-progressBar .campaignFundingBar-progress {
+    position: absolute;
+    height: 10px;
+    background: #34ca96;
+    border-radius: 5px 0 0 5px;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-progressDetails .detailsGoal {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .columns .basicsGoalProgress .basicsGoalProgress-progressDetails .goalWording {
+    font-weight: 600;
+    border-bottom: 1px dashed #949494;
+    margin-left: 4px;
+  }
+  .columns .basicsSection-actions {
+    display: none;
+    align-items: center;
+    margin-top: 0.75rem;
+  }
+  .columns .basicsSection-actions .followButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 1.25rem;
+    text-align: center;
+    height: 3rem;
+    font-size: 0.875rem;
+    color: #2a2a2a;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    transition: all 0.1s cubic-bezier(0.16, 0.8, 0.45, 1);
+    white-space: nowrap;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .columns .basicsSection-actions .followButton svg {
+    margin-right: 0.5rem;
+    fill: #6a6a6a;
+  }
+  .columns .basicsSection-actions .basicsSocialActions {
+    flex: 1;
+    text-align: right;
+  }
+  .columns .basicsSection-actions .basicsSocialActions a {
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  .columns .basicsSection-actions .basicsSocialActions svg {
+    fill: #6a6a6a;
+    width: 20px;
+    height: 20px;
+  }
+  .columns .midContent-left {
+    width: 100%;
+    border-top: 1px solid #c8c8c8;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem 0;
+  }
+  .columns .midContent-right {
+    width: 100%;
+    margin-left: 0;
+  }
+  .columns .tabs {
+    display: flex;
+  }
+  .columns .tabs .tab {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .columns .tabs .tab .tab-label {
+    padding-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+  .columns .tabs .tab .tab-pill {
+    display: none;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    margin-left: 3px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+  .columns .tabs .tab:hover .tab-label {
+    border-bottom: 3px solid #c8c8c8;
+  }
+  .columns .tabs .active .tab-label {
+    border-bottom: 3px solid #2a2a2a !important;
+    font-weight: 600;
+  }
+  .columns .tabs_contents {
+    margin-top: 2rem;
+  }
+  .columns .tabs_contents img {
+    max-width: 100%;
+  }
+  .columns .tabs_contents p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .columns .tabs_contents h4 {
+    font-size: 1rem;
+  }
+  .columns .faqSection-container {
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+  .columns .defaultCampaignFaqs-container {
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+  }
+  .columns .defaultCampaignFaqs-container h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  .columns .defaultCampaignFaqs-container .campaignFaq-container {
+    padding-top: 24px;
+  }
+  .columns .defaultCampaignFaqs-container .campaignFaq-question {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .columns .defaultCampaignFaqs-container .campaignFaq-answer {
+    font-weight: 500;
+    color: #6a6a6a;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .columns .defaultCampaignFaqs-container-divider {
+    padding: 24px;
+  }
+  .columns .defaultCampaignFaqs-container-divider--border {
+    border-top: 1px solid #ddd;
+  }
+  .columns ul {
+    padding-left: 0;
+  }
+  .columns .list_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 20px;
+  }
+  .columns .list_item .person {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0.75rem;
+  }
+  .columns .list_item .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .columns .list_item .name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .columns .list_item .desc2 {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .columns .list_item .amount {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 3px;
+  }
+  .columns .perkSection {
+    width: 100%;
+    margin: auto;
+  }
+  .columns .perkSection .selectPerkLabel {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .columns .perkSection .stickyPerkSection {
+    height: auto;
+    padding-right: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: margin 0.6s ease-in-out;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 1rem;
+  }
+  .columns .perkSection .perkCard {
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    opacity: 0.5;
+    padding: 0 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
+    display: inline-block;
+    white-space: normal;
+    position: relative;
+    width: 208px;
+    height: 232px;
+    overflow: hidden;
+    vertical-align: top;
+  }
+  .columns .perkSection .perkCard .perkName {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+  }
+  .columns .perkSection .perkCard .perkPrice {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .columns .perkSection .perkCard .description {
+    display: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .columns .perkSection .perkCard .estimatedShipping {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .columns .perkSection .perkCard .estDelivery {
+    font-size: 0.75rem;
+  }
+  .columns .perkSection .perkCard .claimed {
+    padding-top: 0.75rem;
+    font-size: 0.75rem;
+  }
+}
